@@ -509,3 +509,43 @@ fieldset.field{border:0;margin:0;padding:0;min-width:0}
 .trust h2{margin-bottom:1.1rem}
 .hero h1{font-size:clamp(2.6rem,7.2vw,6rem)}
 @media (max-width:420px){.hero h1{font-size:clamp(2.35rem,9.5vw,3.2rem)}}
+
+
+
+/* FOXEN meaning */
+.foxen-meaning{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  border-top:1px solid var(--line-2);
+  border-left:1px solid var(--line-2);
+}
+.foxen-meaning>div{
+  padding:2rem 1.5rem 2.2rem;
+  border-right:1px solid var(--line-2);
+  border-bottom:1px solid var(--line-2);
+  background:#fff;
+}
+.foxen-meaning .letter{
+  display:block;
+  font:700 2.8rem/1 var(--display);
+  color:var(--gold);
+  margin-bottom:.75rem;
+}
+.foxen-meaning h3{
+  margin-bottom:.5rem;
+  font-size:1.05rem;
+}
+.foxen-meaning p{
+  color:var(--steel);
+  font-size:.95rem;
+  line-height:1.55;
+}
+@media (max-width:1100px){
+  .foxen-meaning{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:700px){
+  .foxen-meaning{grid-template-columns:1fr 1fr}
+}
+@media (max-width:480px){
+  .foxen-meaning{grid-template-columns:1fr}
+}
